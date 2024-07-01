@@ -1,0 +1,99 @@
+
+
+.search-box{
+    width: 1500px;
+    background:rgb(240, 240, 240);
+    margin: 10px auto auto;
+    border-radius: 30px;
+}
+.row{
+    display:flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+input{
+    flex:1;
+    height:50px;
+    background: transparent;
+    border:0px;
+    outline:0;
+    font-size: 20 px;
+}
+button{
+    background: transparent;
+    border: 0px;
+    margin:10px auto auto;
+    outline: 0;
+}
+button .fa-solid{
+    margin:10px 10px 10px 10px;
+    width:25px;
+    color:#555;
+    font-size:30px;
+    cursor:pointer;
+}
+
+::placeholder{
+    color:#555;
+    font-size:22px;
+    margin:auto ;
+    font-weight:bold;
+   
+
+}
+
+.result-box ul{
+    border-top: 1px solid #999;
+    padding:15px 10px;
+}
+
+.result-box ul li{
+    list-style:none;
+    border-radius:3px;
+    padding:15px 10px;
+    cursor: pointer;
+}
+.result-box ul li:hover{
+    background:#e9f3ff;
+}
+.result-box{
+  max-height:300px;
+  /*overflow-y:scroll;  */
+  overflow-y: hidden;
+}
+
+.bell-icon{
+margin-top: 10px;
+
+}
+
+.post-ratings-container {
+	display: flex;
+	justify-content: end;
+}
+
+.post-rating {
+	display: flex;
+	align-items: center;
+	cursor: default;
+}
+
+.post-rating:not(:last-child) {
+	margin-right: 12px;
+}
+
+.post-rating-selected > .post-rating-button,
+.post-rating-selected > .post-rating-count {
+	color: #009578;
+}
+
+.post-rating-button {
+	margin-right: 6px;
+	cursor: pointer;
+	color: #555555;
+}
+
+.post-rating:not(.post-rating-selected) > .post-rating-button:hover {
+	color: #000000;
+}
